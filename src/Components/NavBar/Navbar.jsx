@@ -12,8 +12,9 @@ const Navbar = () => {
         { id: 1, path: '/', name: 'Home' },
         { id: 2, path: '/about', name: 'About' },
         { id: 3, path: '/contact', name: 'Contact' },
-        { id: 4, path: '/products/:productId', name: 'ProductDetail' },
-        { id: 5, path: undefined, name: 'NotFound' },
+        { id: 4, path: '/productdetail', name: 'ProductDetail' },
+        { id: 5, path: '/notfound', name: 'NotFound' },
+        {id: 6, path: '/users', name: 'Users'}
     ];
 
 
@@ -31,7 +32,7 @@ const Navbar = () => {
 
 
             <ul className={`md:flex absolute shadow-lg  bg-yellow-200 px-6 text-2xl 
-            ${open ? '-top-60':'top-16'} duration-1000
+            md:${open ? '-top-60':'top-16'} duration-1000 gap-5
             `}>
 
                 {

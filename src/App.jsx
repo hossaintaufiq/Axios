@@ -10,7 +10,7 @@ function App() {
     <>
      {/* <DaisyNav/> */}
      <Navbar/>
-      <h1 className='text-center font-bold text-7xl'> Vite + React</h1>
+     
       
     </>
   )
