@@ -1,9 +1,21 @@
+import { useLoaderData } from "react-router-dom";
+import User from "../User/User";
 
 
 const Users = () => {
+
+    const users = useLoaderData();
+    console.log(users);
+
     return (
         <div>
-            <h2 className="text-3xl bg-orange-300">this is users page  </h2>
+            
+
+            
+
+            {
+                users.map(user=><User key={user.id} user={user}/> )
+            }
         </div>
     );
 };
